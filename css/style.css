@@ -1,0 +1,114 @@
+/*  --- Allgemeines --- */
+
+body {
+	font-family: "Times New Roman", sans-serif;
+	font-size: 18px;
+	background-image: url("HOT.jpg");
+	background-color: #cccccc;
+}
+
+.pause {
+	height: 200px;
+	background-color: #585858;
+	
+}
+
+.container {
+	padding-bottom: 35px;	
+	padding-top: 35px;
+}
+
+#nummer4 {
+	padding-left:100px;
+	padding-right:100px;
+}
+
+
+#buttonpower {
+	padding-top: 100px;
+}
+
+/* --- Navbar --- */
+
+.navbar-default{
+    background-color: #000000;
+	min-height: 50px;
+}
+
+.navbar-default .navbar-nav > l i > a:focus, .navbar-default .nav li a:hover{
+     background-color: #FFFFFF;
+	 color: #000000;
+}
+
+.menuItem a, .navbar-brand{
+	font-weight: bold;
+    font-size: 22px;
+
+}
+
+.navbar-brand {
+	font-size: 25px;
+}
+
+
+/* --- Schriftarten --- */
+
+.ueberschrift {
+	font-size: 25px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.trenner {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.carousel-caption{
+	color: #FE2E64;
+}
+
+.gruen {
+	color: #00FF00;
+}
+/* --- hover Profilbild --- */
+
+#profilbild{
+
+	isplay: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition-duration: 1.0s;
+    -moz-transition-duration: 1.0s;
+    -o-transition-duration: 1.0s;
+    transition-duration:1.0s;    
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    z-index: 10;
+    position: inherit; 
+}
+
+#profilbild:hover{
+    z-index: 100;   
+    -webkit-transform:scale(1.35,1.35);
+    -moz-transform:scale(1.35,1.35);
+    -o-transform:scale(1.35,1.35);
+    transform:scale(1.35,1.35);
+}
+
+
+
+/* --- Karussel --- */
+
+#nummer3 {
+	height:700px;
+	width:800px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
