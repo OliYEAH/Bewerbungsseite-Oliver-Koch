@@ -1,13 +1,17 @@
 $(document).ready(function() {
 	var x = 0;
 	
+	/* --- Monster trinken anfangs verstecken --- */
 	$("#leer").hide();
 	
+	/* --- Monster holen --- */
 	$('#monster_h').click(function(){
 		x = x + 10;
 		$("#leer").show();
 	});
 	
+	
+	/* --- Monster trinken --- */
 	$('#monster_t').click(function(){
 
 		
@@ -42,13 +46,14 @@ $(document).ready(function() {
 		
 		if (x == 0)
 		{
+			alert("Die Dose ist leider leer :(");
 			x = 10;
 			document.getElementById('pb1').style.width=0+'%';
 			document.getElementById('pb2').style.width=0+'%';
 			document.getElementById('pb3').style.width=0+'%';
 			document.getElementById('pb4').style.width=0+'%';
 			$("#leer").hide();
-			alert("Die Dose ist leider leer :(");
+			$('.skill').text('0%');			
 		}
 		
 		

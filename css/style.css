@@ -1,4 +1,4 @@
-/*  --- Allgemeines --- */
+/*  --- Allgemeines und Verschiebungen --- */
 
 body {
 	font-family: "Times New Roman", sans-serif;
@@ -54,7 +54,7 @@ body {
 }
 
 
-/* --- Schriftarten --- */
+/* --- Schrift und Farben --- */
 
 .ueberschrift {
 	font-size: 25px;
@@ -100,8 +100,6 @@ body {
     -o-transform:scale(1.35,1.35);
     transform:scale(1.35,1.35);
 }
-
-
 
 /* --- Karussel --- */
 
