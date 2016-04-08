@@ -25,9 +25,12 @@ body {
 
 
 #buttonpower {
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
+#leer {
+	padding-top: 50px;
+}
 /* --- Navbar --- */
 
 .navbar-default{

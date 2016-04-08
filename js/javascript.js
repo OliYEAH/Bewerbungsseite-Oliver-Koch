@@ -1,8 +1,14 @@
 $(document).ready(function() {
-	
 	var x = 0;
 	
-	$('#monster').click(function(){
+	$("#leer").hide();
+	
+	$('#monster_h').click(function(){
+		x = x + 10;
+		$("#leer").show();
+	});
+	
+	$('#monster_t').click(function(){
 
 		
 		var w = 100;
@@ -32,15 +38,16 @@ $(document).ready(function() {
 			'background-color': colors()
 		});
 		
-		x++;
+		x--;
 		
-		if (x == 10)
+		if (x == 0)
 		{
-			x = 0;
-			document.getElementById('pb1').style.width=x+'%';
-			document.getElementById('pb2').style.width=x+'%';
-			document.getElementById('pb3').style.width=x+'%';
-			document.getElementById('pb4').style.width=x+'%';
+			x = 10;
+			document.getElementById('pb1').style.width=0+'%';
+			document.getElementById('pb2').style.width=0+'%';
+			document.getElementById('pb3').style.width=0+'%';
+			document.getElementById('pb4').style.width=0+'%';
+			$("#leer").hide();
 			alert("Die Dose ist leider leer :(");
 		}
 		
